@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Community Quietstotic</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+padding:40px 25px;
+
+color:white;
+
+overflow-x:hidden;
+
+position:relative;
+
+}
+
+
+/* ================= BACKGROUND ================= */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+
+linear-gradient(
+rgba(20,40,70,.40),
+rgba(20,40,70,.40)
+),
+
+url("https://69cc2a1a21aad77cf8fddd59.imgix.net/kyss/1001595933.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+filter:blur(3px);
+
+transform:scale(1.06);
+
+z-index:-2;
+
+}
+
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+
+rgba(0,0,0,.08);
+
+z-index:-1;
+
+}
+
+
+/* ================= BACK BUTTON ================= */
+
+.back-btn{
+
+position:fixed;
+
+top:22px;
+
+left:18px;
+
+width:52px;
+
+height:52px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-decoration:none;
+
+font-size:28px;
+
+font-weight:700;
+
+color:white;
+
+border-radius:999px;
+
+background:
+
+rgba(39,48,111,.92);
+
+backdrop-filter:blur(10px);
+
+box-shadow:
+
+0 4px 12px rgba(0,0,0,.3);
+
+z-index:999;
+
+transition:.25s;
+
+}
+
+.back-btn:hover{
+
+transform:scale(1.06);
+
+}
+
+
+/* ================= TITLE ================= */
+
+.title{
+
+margin-top:35px;
+
+font-size:54px;
+
+font-weight:800;
+
+line-height:.95;
+
+text-align:center;
+
+text-shadow:
+
+2px 2px 10px rgba(0,0,0,.45);
+
+margin-bottom:90px;
+
+}
+
+
+/* ================= MENU ================= */
+
+.menu{
+
+width:100%;
+
+max-width:430px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:24px;
+
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn{
+
+display:flex;
+
+align-items:center;
+
+height:76px;
+
+background:#283470;
+
+border-radius:999px;
+
+overflow:hidden;
+
+text-decoration:none;
+
+box-shadow:
+
+0 5px 15px rgba(0,0,0,.25);
+
+transition:.25s;
+
+}
+
+
+.btn:hover{
+
+transform:scale(1.03);
+
+}
+
+
+.icon{
+
+width:76px;
+
+height:76px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:white;
+
+flex-shrink:0;
+
+}
+
+
+.icon img{
+
+width:44px;
+
+height:44px;
+
+object-fit:contain;
+
+}
+
+
+.label{
+
+flex:1;
+
+text-align:center;
+
+font-size:21px;
+
+font-weight:800;
+
+letter-spacing:1px;
+
+color:white;
+
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer{
+
+margin-top:auto;
+
+padding-top:120px;
+
+width:100%;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+opacity:.9;
+
+}
+
+
+.line{
+
+width:72%;
+
+height:4px;
+
+background:white;
+
+border-radius:999px;
+
+margin-bottom:14px;
+
+}
+
+
+.copy{
+
+font-size:15px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- BACK -->
+
+<a href="index.html"
+class="back-btn">
+
+←
+
+</a>
+
+
+
+<!-- TITLE -->
+
+<div class="title">
+
+Community<br>
+
+Quietstotic
+
+</div>
+
+
+
+
+<!-- MENU -->
+
+<div class="menu">
+
+
+<a href="#"
+class="btn">
+
+<div class="icon">
+
+<img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png">
+
+</div>
+
+<div class="label">
+
+DISCORD
+
+</div>
+
+</a>
+
+
+
+
+<a href="#"
+class="btn">
+
+<div class="icon">
+
+<img src="https://cdn-icons-png.flaticon.com/128/2111/2111668.png">
+
+</div>
+
+<div class="label">
+
+TWITCH
+
+</div>
+
+</a>
+
+
+
+
+<a href="#"
+class="btn">
+
+<div class="icon">
+
+<img src="https://cdn-icons-png.flaticon.com/128/15713/15713434.png">
+
+</div>
+
+<div class="label">
+
+GROUP WA
+
+</div>
+
+</a>
+
+
+
+
+<a href="#"
+class="btn">
+
+<div class="icon">
+
+<img src="https://cdn-icons-png.flaticon.com/128/15713/15713420.png">
+
+</div>
+
+<div class="label">
+
+INSTAGRAM
+
+</div>
+
+</a>
+
+</div>
+
+
+
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<div class="line"></div>
+
+<div class="copy">
+
+©copyright - dekky.ss
+
+</div>
+
+</div>
+
+
+</body>
+
+</html>
