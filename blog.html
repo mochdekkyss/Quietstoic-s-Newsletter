@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Blog</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+/* HEADER */
+header{
+  padding:20px;
+  text-align:center;
+  background:#111827;
+}
+
+header h1{
+  font-size:22px;
+}
+
+header p{
+  font-size:14px;
+  opacity:0.8;
+  margin-top:5px;
+}
+
+/* PROFILE */
+.profile{
+  text-align:center;
+  padding:30px 20px;
+}
+
+.profile img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #3b82f6;
+  transition:0.3s;
+}
+
+.profile img:hover{
+  transform:scale(1.05);
+}
+
+.profile h2{
+  margin-top:15px;
+}
+
+.profile span{
+  font-size:14px;
+  opacity:0.7;
+}
+
+/* SECTION */
+.section{
+  padding:25px 20px;
+}
+
+.section h3{
+  margin-bottom:15px;
+  font-size:18px;
+  border-left:4px solid #3b82f6;
+  padding-left:8px;
+}
+
+/* CARD */
+.card{
+  background:#1e293b;
+  padding:15px;
+  border-radius:12px;
+  margin-bottom:15px;
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* SKILLS */
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.skill{
+  background:#3b82f6;
+  padding:6px 12px;
+  border-radius:15px;
+  font-size:12px;
+}
+
+/* GALLERY GRID */
+.gallery-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap:10px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:120px;
+  object-fit:cover;
+  border-radius:10px;
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  font-size:12px;
+  opacity:0.6;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>My Personal Blog</h1>
+  <p>IT Student | Programmer | Networking</p>
+</header>
+
+<section class="profile">
+  <img src="https://i.imgur.com/fdVenoY.jpeg" alt="Profile">
+  <h2>Moch Dekky Saputra</h2>
+  <span>Passionate in Technology & Development</span>
+</section>
+
+<section class="section">
+  <h3>About Me</h3>
+  <div class="card">
+    I am an IT student with experience in programming, computer engineering, and networking.
+    I enjoy building web projects and exploring new technologies.
+  </div>
+</section>
+
+<section class="section">
+  <h3>Skills</h3>
+  <div class="skills">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Networking</div>
+    <div class="skill">Public Speaking</div>
+    <div class="skill">Microsoft Office</div>
+    <div class="skill">Community Management</div>
+    <div class="skill">Hostinger</div>
+  </div>
+</section>
+
+<section class="section">
+  <h3>Photo Gallery</h3>
+  <div class="gallery-grid">
+    <img src="https://i.imgur.com/PxfRFJV.png" alt="Photo 0">
+    <img src="https://i.imgur.com/UPg2n3W.jpeg" alt="Photo 1">
+    <img src="https://i.imgur.com/Z6UT5f0.jpeg" alt="Photo 2">
+    <img src="https://i.imgur.com/suHYgUg.jpeg" alt="Photo 3">
+    <img src="https://i.imgur.com/B1f7Lw3.jpeg" alt="Photo 4">
+    <img src="https://i.imgur.com/QtassnI.jpeg" alt="Photo 5">
+  </div>
+</section>
+
+<section class="section">
+  <h3>Projects</h3>
+  <div class="card">
+    <strong>Website Development</strong><br>
+    Created responsive websites using modern web technologies.
+  </div>
+  <div class="card">
+    <strong>Network Setup</strong><br>
+    Basic configuration and troubleshooting of local networks.
+  </div>
+</section>
+
+<footer>
+  © 2026 Personal Blog | Built with Passion
+</footer>
+
+</body>
+</html>
