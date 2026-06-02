@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<meta http-equiv="Cache-Control" content="no-store">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
 <script>
 if(sessionStorage.getItem("loggedIn") !== "yes"){
-    window.location.href = "secret.html";
+    window.location.replace("secret.html");
 }
+
+/* Logout saat refresh, back, pindah halaman, tutup tab, tutup browser */
+window.addEventListener("beforeunload", function() {
+    sessionStorage.removeItem("loggedIn");
+});
 </script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Personal Blog</title>
