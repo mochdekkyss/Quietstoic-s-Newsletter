@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:#fff;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      overflow:hidden;
+    }
+
+    .container{
+      text-align:center;
+      padding:30px;
+    }
+
+    h1{
+      font-size:4rem;
+      margin-bottom:10px;
+      letter-spacing:2px;
+    }
+
+    h2{
+      color:#38bdf8;
+      margin-bottom:20px;
+      font-weight:500;
+    }
+
+    p{
+      color:#cbd5e1;
+      max-width:500px;
+      margin:auto;
+      line-height:1.7;
+    }
+
+    .badge{
+      display:inline-block;
+      margin-top:30px;
+      padding:12px 24px;
+      border:1px solid #38bdf8;
+      border-radius:50px;
+      color:#38bdf8;
+      font-weight:bold;
+    }
+
+    .btn-home{
+      display:inline-block;
+      margin-top:20px;
+      padding:12px 28px;
+      background:#38bdf8;
+      color:#0f172a;
+      text-decoration:none;
+      border-radius:50px;
+      font-weight:bold;
+      transition:.3s;
+    }
+
+    .btn-home:hover{
+      background:#fff;
+      transform:translateY(-3px);
+    }
+
+    .circle{
+      position:absolute;
+      border-radius:50%;
+      background:rgba(56,189,248,.08);
+      animation:float 6s ease-in-out infinite;
+    }
+
+    .c1{
+      width:220px;
+      height:220px;
+      top:-80px;
+      left:-80px;
+    }
+
+    .c2{
+      width:300px;
+      height:300px;
+      bottom:-120px;
+      right:-120px;
+      animation-delay:2s;
+    }
+
+    @keyframes float{
+      0%,100%{transform:translateY(0);}
+      50%{transform:translateY(20px);}
+    }
+
+    @media(max-width:600px){
+      h1{
+        font-size:2.6rem;
+      }
+
+      h2{
+        font-size:1.2rem;
+      }
+
+      p{
+        font-size:14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="circle c1"></div>
+<div class="circle c2"></div>
+
+<div class="container">
+  <h1>🚧 Coming Soon</h1>
+  <h2>Halaman Belum Diupdate</h2>
+
+  <p>
+    Mohon maaf, halaman ini sedang dalam proses pengembangan.
+    Kami sedang menyiapkan pembaruan agar tampil lebih baik dan
+    memberikan pengalaman yang lebih nyaman.
+  </p>
+
+  <div class="badge">
+    Belum Update
+  </div>
+
+  <br>
+
+  <a href="index.html" class="btn-home">
+    ← Back Home
+  </a>
+
+</div>
+
+</body>
+</html>
